@@ -1,0 +1,51 @@
+.container {
+  height: 160px;
+  min-height: 150px;
+  background: linear-gradient(262.92deg, #a36bfc 4.14%, #f4627a 87.63%);
+  border-radius: 10px;
+  position: relative;
+  font-family: "Inter", sans-serif !important;
+  color: white;
+}
+.details {
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.details-btn {
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0.3em 0.5em;
+  display: inline;
+  background-color: #212121 !important;
+}
+.circle {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  top: 31%;
+}
+.left-circle {
+  left: -35px;
+}
+.right-circle {
+  right: -35px;
+}
+
+@media only screen and (max-width: 800px) {
+  .details {
+    padding-left: 45px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
