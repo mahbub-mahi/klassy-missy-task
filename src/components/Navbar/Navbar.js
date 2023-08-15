@@ -1,12 +1,15 @@
 const Navbar = () => {
   return (
-    <div>
+    <div class="sticky top-0 z-[1000] bg-white">
       {" "}
       <div class="bg-[#d3066d] text-white">
         <div class="w-11/12 sm:w-4/5 py-3 m-auto text-[12px] ">
           <div>
-            <span>Customer Care:</span>
-            <a href="tel:+Need Help ? Just Call -  01310202026 ( 10 AM to 6 PM only)">
+            <span class="hidden md:inline">Customer Care: </span>
+            <a
+              class=" tracking-tight"
+              href="tel:+Need Help ? Just Call -  01310202026 ( 10 AM to 6 PM only)"
+            >
               Need Help ? Just Call - 01310202026 ( 10 AM to 6 PM only)
             </a>
           </div>
@@ -15,11 +18,13 @@ const Navbar = () => {
         </div>
       </div>
       <div class="flex justify-between w-11/12 sm:w-4/5 py-2 m-auto">
-        <img
-          className="self-center w-fit pr-4"
-          src="https://klassy.com.bd/public/uploads/settings/general/lrChtKFxC6of10DxZNezmW2eFIejECHWnZglkIHG.png"
-          alt=""
-        />
+        <a class="cursor-pointer pt-1 pr-8" href="/">
+          <img
+            className="self-center w-full"
+            src="https://klassy.com.bd/public/uploads/settings/general/lrChtKFxC6of10DxZNezmW2eFIejECHWnZglkIHG.png"
+            alt=""
+          />
+        </a>
         <div class="py-3 sm:inline hidden lg:w-[470px] md:w-[370px]">
           <input
             type="text"
@@ -33,7 +38,7 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            class="w-6 h-6 inline -ml-10"
+            class="w-5 h-5 md:w-6 md:h-6 inline -ml-10 cursor-pointer"
           >
             <path
               strokeLinecap="round"
@@ -43,7 +48,7 @@ const Navbar = () => {
           </svg>
         </div>
         <div class="flex justify-center items-center text-[12px] lg:text-[13px]  ">
-          <div class="pr-2 sm:pr-4 border-e-2 pl-3 uppercase">
+          <div class="pr-1 sm:pr-2 border-e-2 pl-2 uppercase text-center cursor-pointer">
             Sign In
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +56,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              class="ml-2 w-6 h-6 inline "
+              class="ml-1 w-[15px] h-[15px] md:w-[20px] md:h-[20px] inline "
             >
               <path
                 strokeLinecap="round"
@@ -60,7 +65,7 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <div class="pl-2 uppercase">
+          <div class="pl-2 uppercase text-center">
             My bag{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +73,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              class="ml-2 w-6 h-6 inline"
+              class="ml-1 w-[15px] h-[15px] md:w-[20px] md:h-[20px] inline cursor-pointer "
             >
               <path
                 strokeLinecap="round"
@@ -79,7 +84,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div class="py-3 sm:hidden block w-[350px] m-auto">
+      <div class="pt-0 pb-3 sm:hidden block w-[350px] m-auto">
         <input
           type="text"
           id="search"
@@ -92,7 +97,7 @@ const Navbar = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          class="w-6 h-6 inline -ml-10"
+          class="w-5 h-5 inline -ml-10"
         >
           <path
             strokeLinecap="round"
@@ -103,8 +108,8 @@ const Navbar = () => {
       </div>
       <div class="bg-white w-full border-y">
         <div class="w-[95%] sm:w-[80%] m-auto overflow-auto">
-          <div class="w-fit m-auto py-2">
-            <a class="lg:px-4 md:px-2 sm:px-1 lg:inline md:inline xs:inline sm:inline hidden">
+          <div class="flex justify-between md:justify-center m-auto py-2 text-[13px] font-semibold text-[#646464] font-sans">
+            <a class="mx-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -123,18 +128,18 @@ const Navbar = () => {
             <a class="mx-4 hover:text-[#d3066d]" href="/">
               HOME
             </a>
-            <a class="mx-4 hover:text-[#d3066d] " href="/brands">
+            <a class="mx-4  hover:text-[#d3066d] " href="/brands">
               BRANDS
             </a>
-            <a class="mx-4 hover:text-[#d3066d] " href="/pre-order">
+            <a class="mx-4  hover:text-[#d3066d] " href="/pre-order">
               PREORDER
             </a>
-            <a class="mx-4 hover:text-[#d3066d] " href="/campaigns">
+            <a class="mx-4  hover:text-[#d3066d] " href="/campaigns">
               CAMPAIGNS
             </a>
             <a
               aria-current="page"
-              class="mx-4  hover:text-[#d3066d] "
+              class="mx-4 hover:text-[#d3066d] "
               href="/coupons"
             >
               COUPONS
