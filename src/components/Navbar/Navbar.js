@@ -9,6 +9,7 @@ const Navbar = () => {
             <a
               class=" tracking-tight"
               href="tel:+Need Help ? Just Call -  01310202026 ( 10 AM to 6 PM only)"
+              data-testid="customer-care"
             >
               Need Help ? Just Call - 01310202026 ( 10 AM to 6 PM only)
             </a>
@@ -18,11 +19,11 @@ const Navbar = () => {
         </div>
       </div>
       <div class="flex justify-between w-11/12 sm:w-4/5 py-2 m-auto">
-        <a class="cursor-pointer pt-1 pr-8" href="/">
+        <a data-testid="main-logo" class="cursor-pointer pt-1 pr-8" href="/">
           <img
             className="self-center w-full"
             src="https://klassy.com.bd/public/uploads/settings/general/lrChtKFxC6of10DxZNezmW2eFIejECHWnZglkIHG.png"
-            alt=""
+            alt="main-logo"
           />
         </a>
         <div class="py-3 sm:inline hidden lg:w-[470px] md:w-[370px]">
